@@ -5,15 +5,15 @@
 
 .row-content {
 	margin: 0px auto;
-	padding 50px 0px 50px 0px;
-	border-bottom: 1px ridge;
-	min-height: 400px;
+	padding-top: 100px;
+	padding-bottom: 50px;
+
 }
 
 .footer {
 	background-color: #1E1E24;
 	margin: 0px auto;
-	padding 20px 0px 20px 0px;
+	padding :20px 0px 20px 0px;
 }
 
 .jumbotron {
@@ -97,16 +97,13 @@ h1 {
 
 }
 
-form {
-	padding: 50px 0px 0px 0px;
-}
 
 .input-group-text {
 	background-color: #DD1C1A;
 	color: white;
 }
 
-.padding-0{
+.padding-0 {
     padding-right:0;
     padding-left:0;
 }
@@ -140,9 +137,8 @@ a {
 }
 
 h2 {
-	font-size:45px;
-	padding-top: 100px;
-	padding-bottom: 10px;
+	font-weight: bold;
+	font-size:48px;
 	text-align: center;
 }
 
@@ -152,4 +148,32 @@ h2 {
 
 .btn-group {
 	border-top-left-radius: 
+}
+
+.desc {
+	line-height: 50px;
+	font-size: 28px;
+}
+
+h3 {
+	color:#DD1C1A ;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.cpyright {
+	color: white !important;
+}
+
+.find-creators {
+	margin-top:50px;
+}
+
+.are-you {
+	margin-bottom: 50px;
+}
+
+.last-row {
+	background-color: #FAFBFC !important;
+	padding-bottom: 150px;
 }
