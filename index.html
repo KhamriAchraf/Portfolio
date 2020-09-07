@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
 	<!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/styles.css">
 
-    <title>The Underground</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" href="./img/underground-icon.png">
+
+    <title>Welcome to The Underground!</title>
 </head>
 
 <body>
@@ -22,50 +26,58 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand col-12 col-sm-auto img-fluid img" href="./index.html"><img src="./img/underground_logo.png"></a>
+            <a class="navbar-brand" href="./index.html"><img id="logo" src="./img/underground_logo.png"></a>
             <div class="collapse navbar-collapse" id="Navbar">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active col-sm-3"><a class="nav-link" href="./index.html"> Home</a></li>
-					<li class="nav-item col-sm-3"><a class="nav-link" href="./aboutus.html">About</a></li>
+					<li class="nav-item col-sm-3"><a class="nav-link" href="./test.html">About</a></li>
 					<li class="nav-item mr-auto col-sm-3">
                         <div class="btn-group" role="group">
-                            <a role="button" class="btn btn-outline-primary" href="./signin.html"> Sign In</a>
+                            <a role="button" class="btn btn-outline-primary" href="./signin.html"> Log in</a>
                             <a role="button" class="btn btn-primary" href="./signup.html"> Sign Up</a>
-                        </div>                    
+                        </div>  
                     </li>
 				</ul>
 			</div>
 		</div>
 	</nav>
+    
 
-    <header class="jumbotron">
+    <header class="jumbotron showcase" id="top">
+
+        <a href="javascript:darkMode();" id="light" class="float theme">
+            <i class="fa fa-adjust my-float  btn-block"></i>
+            </a>
         <div class="container">
             <div class="row row-header align-items-center">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6 mb-5 mb-sm-0" data-aos="fade-in" data-aos-duration="1200">
                     <h1>Welcome to The Underground</h1>
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-                    <a role="button"class="btn btn-lg" href="./signup.html"> Get started</a>
+                    <a role="button"class="btn btn-lg mt-3 mt-sm-0" href="./signup.html"> Get started</a>
                 </div>
-                <div class="col-12 col-sm order-sm-last order-first">
-                    <img class="placeholder img img-fluid" src="./img/placeholder-image.png">
-                </div>
+            </div>
+            <div class="arrow row align-items-center " data-aos="fade-down" data-aos-duration="1200" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
+                <a href="#" onclick="scrollWin(0, 450)"><img class="img img-fluid" src="./img/arrow.png"></a> 
             </div>
         </div>
     </header>
 
     <div class="container ">
-        <div class="row row-content justify-content-center">
-            <h2>Find your favorite creators &amp; artists on The Underground</h2>
+        <div class="row row-content justify-content-center" data-aos="fade-up" data-aos-duration="1200">
+            <h2 id="down">Find your favorite creators &amp; artists on The Underground</h2>
         <form class="form-inline md-form col-12 row justify-content-center find-creators">
-            <input class="form-control search-bar mr-4 col-12 col-sm-9" type="text" placeholder="Type a creator's name" aria-label="Search">
-            <button class="btn btn-lg aqua-gradient btn-on-white col-12 col-sm-2" type="submit"> Search</button>
+            <input class="form-control search-bar mr-sm-4 col-12 col-sm-9" type="text" placeholder="Type a creator's name" aria-label="Search">
+            <button class="btn btn-lg col-5 col-sm-2 mt-3 mt-sm-0" type="submit"> Search</button>
         </form>
 
         </div>
     </div>
 
-    <div class="row row-content justify-content-center">
+
+
+
+    <div class="row row-content justify-content-center" data-aos="fade-up" data-aos-duration="1200">
             <h2 class="col-12 ">What is The Underground?</h2>
             <p class="col-12 col-sm-7 text-align-center desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -82,60 +94,121 @@
 
 
 
-        <div class="row row-content align-items-center justify-content-center ">
-            <div class="col-12 col-sm-5 order-sm-first align-self-baseline ">
+        <div class="row row-content align-items-center justify-content-center"> 
+            <div class="col-12 col-sm-5 order-sm-first align-self-baseline" data-aos="fade-right" data-aos-duration="1200">
                 <h3>Monetize your passion</h3>
                 <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.</p>
             </div>
-            <div class="col-12 col-sm-5">
-                <img class="placeholder img img-fluid" src="./img/placeholder-image.png">
+            <div class="col-12 col-sm-5" data-aos="fade-left" data-aos-duration="1200">
+                <img class="placeholder img img-fluid shadowfilter" src="./img/placeholder-image.png">
             </div>
         </div>
 
 
-        <div class="row row-content align-items-center justify-content-center ">
-            <div class="col-12 col-sm-5 order-sm-last align-self-baseline ">
+        <div class="row row-content align-items-center justify-content-center " >
+            <div class="col-12 col-sm-5 order-sm-last align-self-baseline" data-aos="fade-left" data-aos-duration="1200">
                 <h3>Follow your favorite artists</h3>
                 <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.</p>
             </div>
-            <div class="col-12 col-sm-5">
-                <img class="placeholder img img-fluid" src="./img/placeholder-image.png">
+            <div class="col-12 col-sm-5" data-aos="fade-right" data-aos-duration="1200">
+                <img class="placeholder img img-fluid shadowfilter" src="./img/placeholder-image.png">
             </div>
         </div>
 
         <div class="row row-content align-items-center justify-content-center ">
-            <div class="col-12 col-sm-5 order-sm-first align-self-baseline ">
+            <div class="col-12 col-sm-5 order-sm-first align-self-baseline" data-aos="fade-right" data-aos-duration="1200">
                 <h3>I ran out of ideas, honestly, I'll come up with something</h3>
                 <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.</p>
             </div>
-            <div class="col-12 col-sm-5">
-                <img class="placeholder img img-fluid" src="./img/placeholder-image.png">
+            <div class="col-12 col-sm-5" data-aos="fade-left" data-aos-duration="1200">
+                <img class="placeholder img img-fluid shadowfilter" src="./img/placeholder-image.png">
             </div>
         </div>
 
 
-        <div class="row row-content justify-content-center last-row">
-            <h2 class="col-12 are-you">Are you ready to start?</h2>
-            <a class="btn btn-lg btn-on-white " type="button" href="./signup.html"> Create an account now</a>
+
+        <div class="row row-content justify-content-center faq" data-aos="fade-up" data-aos-duration="1200">
+            <div class="col-12 col-sm-7">
+            <h2 class="col-12">Frequently Asked Questions</h2>
+                <div id="accordion">
+                    <div class="card m-3 mt-5">
+                        <div class="card-title" role="tab" id="peterhead" data-parent="#accordion">
+                            <h4 class="mb-0"><a class="collapsed btn-block" data-toggle="collapse" data-target="#peter" data-parent="#accordion"> How much does The Underground cost? </a></h4>
+                        </div>
+                        <div role="tabpanel" class="tab-pane collapse" id="peter" data-parent="#accordion">
+                            <p class="text-justify p-3">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+                        </div>
+                    </div>
+                    <div class="card m-3 ">
+                            <div class="card-title" role="tab" id="dannyhead" data-parent="#accordion">
+                            <h4 class="mb-0">
+                                <a class="collapsed btn-block" data-toggle="collapse" data-target="#danny" data-parent="#accordion">
+                                Where can I access my account?
+                                </a>
+                            </h4>
+                        </div>
+                        <div role="tabpanel" class="tab-pane collapse" id="danny" data-parent="#accordion">
+                            <p class="text-justify p-3">Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>
+                        </div>
+                    </div>
+                    <div class="card m-3">
+                            <div class="card-title" role="tab" id="agumbehead" data-parent="#accordion">
+                            <h4 class="mb-0">
+                                <a class="collapsed btn-block" data-toggle="collapse" data-target="#agumbe" data-parent="#accordion">
+                                What can I find on The Underground?
+                                </a>
+                            </h4>
+                        </div>
+                        <div role="tabpanel" class="tab-pane collapse" id="agumbe" data-parent="#accordion">
+                            <p class="text-justify p-3">Blessed with the most discerning gustatory sense, Agumbe, our CTO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
+                        </div>
+                    </div>
+                     <div class="card m-3 mb-5">
+                            <div class="card-title" role="tab" id="albertohead" data-parent="#accordion">
+                            <h4 class="mb-0">
+                                <a class="collapsed btn-block" data-toggle="collapse" data-target="#alberto" data-parent="#accordion">
+                                How do I disable my account?
+                                </a>
+                            </h4>
+                        </div>   
+                        <div role="tabpanel" class="tab-pane collapse" id="alberto" data-parent="#accordion">
+                            <p class="text-justify p-3">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
 
+
+
+
+
+
+        <div class="row row-content justify-content-center last-row parallax3  showcase ">
+            <h2 class="col-12 are-you">Are you ready to start?</h2>
+            <a class="btn btn-lg" type="" href="./signup.html"> Create an account now</a>
+        </div>
 
 
 
     <footer class="footer">
         <div class="container">
-           <div class="row justify-content-center">             
+           <div class="row justify-content-center align-items-center">             
                 <div class="col-auto">
                     <p class="cpyright">© Copyright 2020 The Underground - WIP</p>
+                </div>
+                <div class="ml-auto col-sm-auto col-12">
+                    <a href="#" onclick="scrollWin(0, -50)" class="btn btn-lg ">Back to Top</a>
                 </div>
            </div>
         </div>
@@ -144,6 +217,25 @@
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/dark.js"></script>
+    <script>
+        function scrollWin(x, y) {
+            window.scrollBy(x, y);
+    }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.19.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.19.1/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 
 </body>
 

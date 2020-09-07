@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>The Underground</title>
+    <title>The Underground: Log In</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                     <li class="nav-item col-sm-3"><a class="nav-link" href="./aboutus.html">About</a></li>
                     <li class="nav-item mr-auto col-sm-3">
                         <div class="btn-group" role="group">
-                            <a role="button" class="btn btn-outline-primary" href="./signin.html"> Sign In</a>
+                            <a role="button" class="btn btn-outline-primary" href="./signin.html"> Log in</a>
                             <a role="button" class="btn btn-primary" href="./signup.html"> Sign Up</a>
                         </div>                    
                     </li>
@@ -37,19 +37,22 @@
             </div>
         </div>
     </nav>
-    <header class="jumbotron">
+    <header class="jumbotron parallax2">
         <div class="container">
             <div class="row row-header align-items-center">
-                <div class="col-12 col-sm-6">
-                    <h1>Sign In</h1>
+                <div class="col-12 col-sm-6 mt-5">
+                    <h1>Log In</h1>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mt-5 pt-5">
+                    <p>Log into your existing account and continue exploring The Underground.</p>
                 </div>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <form>
-            <div class="form-group row justify-content-center input-group">
+        <form class="sign-form">
+            <div class="form-group row justify-content-center input-group ">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                 </div>
@@ -64,18 +67,13 @@
                     </div> <!-- form-group// -->
                      
                     <div class="form-group row justify-content-center">
-                        <button type="submit" class="btn btn-on-white btn-primary col-10 col-md-3"> Log in  </button>
+                        <button type="submit" class="btn btn-lg btn-on-white btn-primary"> Log in  </button>
                     </div> <!-- form-group// -->      
-                    <p class="text-center">New to The Underground? <a href="./signup.html">Sign Up</a> </p>                                                                 
+                    <p class="text-center">New to The Underground? <a href="./signup.html">Sign Up</a> </p>
+                    <p class="text-center">By continuing, you agree to <a href="">our User Agreement</a> and <a href="">Privacy Policy</a></p>                                                                     
             </form>
     </div> 
     <!--container end.//-->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

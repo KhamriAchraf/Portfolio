@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "theunderground-wip",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -13,11 +13,11 @@
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>The Underground</title>
+    <title>The Underground: Sign Up</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+    <nav class="navbar navbar-light navbar-expand-sm fixed-top ">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -25,11 +25,11 @@
             <a class="navbar-brand" href="./index.html"><img src="./img/underground_logo.png"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item  col-sm-3"><a class="nav-link" href="./index.html"> Home</a></li>
+                    <li class="nav-item col-sm-3"><a class="nav-link" href="./index.html"> Home</a></li>
                     <li class="nav-item col-sm-3"><a class="nav-link" href="./aboutus.html">About</a></li>
                     <li class="nav-item mr-auto col-sm-3">
                         <div class="btn-group" role="group">
-                            <a role="button" class="btn btn-outline-primary" href="./signin.html"> Sign In</a>
+                            <a role="button" class="btn btn-outline-primary" href="./signin.html"> Log in</a>
                             <a role="button" class="btn btn-primary" href="./signup.html"> Sign Up</a>
                         </div>                    
                     </li>
@@ -37,18 +37,21 @@
             </div>
         </div>
     </nav>
-    <header class="jumbotron">
+    <header class="jumbotron parallax2">
         <div class="container">
             <div class="row row-header align-items-center">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6 mt-5">
                     <h1>Sign Up</h1>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mt-5 pt-5">
+                    <p>Create your free account now and take your first steps into The Underground.</p>
                 </div>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <form>
+        <form class="sign-form">
             <div class="form-group row justify-content-center input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-user"></i> </span>
@@ -86,18 +89,13 @@
                         <input class="form-control col-12 col-md-6 col-lg-4" placeholder="Repeat password" type="password">
                     </div> <!-- form-group// -->                                      
                     <div class="form-group row justify-content-center">
-                        <button type="submit" class="btn btn-on-white btn-primary col-10 col-md-3"> Create Account  </button>
+                        <button type="submit" class="btn btn-lg btn-on-white btn-primary"> Create Account  </button>
                     </div> <!-- form-group// -->      
-                    <p class="text-center">Have an account? <a href="./signin.html">Log In</a> </p>                                                                 
+                    <p class="text-center">Have an account? <a href="./signin.html">Log In</a> </p>
+                    <p class="text-center">By continuing, you agree to <a href="">our User Agreement</a> and <a href="">Privacy Policy</a></p>                                                                 
             </form>
     </div> 
     <!--container end.//-->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
