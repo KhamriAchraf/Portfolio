@@ -34,8 +34,9 @@ button {
 }
 
 .arrow {
-	margin-top: 100px;
-	margin-left: 40vw;
+	position: absolute;
+	top: 80vh;
+	left: 48vw;
 }
 
 
@@ -133,6 +134,8 @@ input:focus, select:focus {
 	border-color: #DD1C1A !important;
 	border-bottom-right-radius: 25px;
 	border-top-right-radius: 25px;
+	width: 100px;
+	height: fit-content;
 }
 
 .nav-item > .btn-group > .btn-outline-primary {
@@ -140,6 +143,8 @@ input:focus, select:focus {
 	color: #DD1C1A;
 	border-bottom-left-radius: 25px;
 	border-top-left-radius: 25px;
+	width: 100px;
+	height: fit-content;
 }
 
 .nav-item > .btn-group > .btn-outline-primary:hover {
