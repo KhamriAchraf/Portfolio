@@ -15,12 +15,14 @@ function darkMode() {
 
 
     if (document.querySelector('.theme').id === 'light') {
+        document.getElementById("404").src = "./img/404-light.png";
         document.getElementById("logo").src = "./img/underground_logo_light.png";
         document.getElementsByClassName('float')[0].style.backgroundColor = 'white';
         document.getElementsByClassName('float')[0].style.color = 'black';
         document.querySelector('.theme').id = 'dark';
     } else {
         document.querySelector('.theme').id = 'light';
+        document.getElementById("404").src = "./img/404.png";
         document.getElementsByClassName('float')[0].style.backgroundColor = '#2C2C2C';
         document.getElementsByClassName('float')[0].style.color = 'white';
         document.getElementById("logo").src = "./img/underground_logo.png";

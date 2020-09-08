@@ -25,6 +25,16 @@ button {
 	padding :20px 0px 20px 0px;
 }
 
+
+input {
+	background-color: rgb(0,0,0,0) !important;
+}
+
+option{
+	background-color: rgb(0,0,0,0) !important;
+	border-color: rgb(0,0,0,0) !important;
+}
+
 .jumbotron {
 	padding: 50px 30px 10px 30px;
 	margin: 0px auto;
@@ -115,6 +125,7 @@ input:focus, select:focus {
     box-shadow: none !important;
     border-color: #DD1C1A !important;
 }
+
 
 .btn-lg {
 	color: white;
