@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.effect-1 {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* Fill Text Effect On Hover - Css3 */
+.effect-1 {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  
+  &:before {
+    top: 0;
+    left: 0;
+    width: 0;
+    color: #F7CB15;
+    overflow: hidden;
+    position: absolute;
+    content: attr(data-text);
+    transition: all 0.9s;
+  }
+  
+  &:hover {
+    
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
